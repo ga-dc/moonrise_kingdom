@@ -19,23 +19,23 @@
 }
 body {
   background-image: url('../images/wood.jpg');
-  font-family: 'Montserrat' 'Helvetica' 'sans-serif';;
-
+  font-family: 'Montserrat' 'Helvetica' 'sans-serif';
 }
 .banner {
   text-align: center;
+  padding-bottom: 1em;
 }
-h1{
-
+h1 {
   margin: 0;
   font-size: 26px;
   text-transform: uppercase;
+  font-stretch: extra-expanded;
 }
-
-h2{
+h2 {
   font-size: 14px;
+  margin: .5em 0 0 0;
 }
-.question{
+.question {
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -46,19 +46,16 @@ h2{
   max-width: 695px;
   padding: .5em;
   position: relative;
-  box-shadow: 5px 5px 25px -14px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 25px -14px rgba(0, 0, 0, 0.75);
 }
 .innerForm {
   border: 2px solid black;
-  padding: 1.3em;
-
-
-
+  padding: 1em;
 }
 .imgSam {
   border: 20px solid #e1c49a;
   transform: rotate(-1deg);
-  box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 25px -4px rgba(0, 0, 0, 0.75);
 }
 .leftColumn {
   float: left;
@@ -66,57 +63,61 @@ h2{
   border-right: .2em solid black;
   margin-top: 1em;
   padding-right: 1em;
-
 }
 .rightColumn {
-  padding: 1em 0 .7em 1.2em;
+  padding: 1.2em 0 .7em 1.5em;
 }
 .clearfix {
   overflow: auto;
 }
-.input{
+.input {
   border-bottom: 1px solid black;
   font-family: Courier;
   margin-left: .5em;
+
 }
-.form-row{
+.form-row {
   padding-bottom: 10px;
 }
-.formInput{
+.formInput {
   margin-top: .3em
 }
-ul li{
+ul li {
   display: inline;
   list-style-type: none;
 }
-form:nth-child(4){
-  font-size: 20px;
-}
-.checkList{
+.checkList {
   border: 1px solid black;
-
 }
-.signature{
+.signature {
   font-size: 11px;
 }
-.verification{
+.verification {
   width: 10em;
-
+  font-family: 'Helvetica';
+  font-size: 12px;
+  float:right;
 }
-.date{
-  width: 10em;
-  float:left;
+.date {
+  width: 15em;
+  float: left;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.dateadd {
+  font-size: 16px;
+  font-family: Courier;
 }
 .herbert {
   font-family: 'Crafty Girls';
-  color:#365c69;
+  color: #365c69;
   text-align: center;
 }
-.parentsig{
+.parentsig {
   font-size: 11px;
-  border-top:1px solid black;
+  border-top: 1px solid black;
   text-transform: uppercase;
 }
-footer{
-  padding-top: 1.3em;
+footer {
+  padding-top: 2.5em;
 }
