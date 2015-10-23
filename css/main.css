@@ -1,25 +1,14 @@
-/*
- - Layout width: 710px
-
- - Photo size: 282 x 282
-
- - Colors:
-
-
-   - #365c69 (blue ink)
-
- - Fonts:
-   - 'Montserrat', Helvetica, sans-serif; (Google fonts)
-   - 'Crafty Girls', script; (Google fonts)
-   - Courier, monospaced;
-*/
-
 * {
   box-sizing: border-box;
+}
+.clearfix {
+  overflow: auto;
 }
 body {
   background-image: url('../images/wood.jpg');
   font-family: 'Montserrat' 'Helvetica' 'sans-serif';
+  font-size: 11px;
+  text-transform: uppercase;
 }
 .banner {
   text-align: center;
@@ -28,53 +17,53 @@ body {
 h1 {
   margin: 0;
   font-size: 26px;
-  text-transform: uppercase;
   font-stretch: extra-expanded;
 }
 h2 {
   font-size: 14px;
   margin: .5em 0 0 0;
+
 }
-.question {
+.question{
   font-size: 11px;
-  text-transform: uppercase;
 }
 .form {
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 4em;
   background: #eabc6f;
-  max-width: 695px;
-  padding: .5em;
+  max-width: 710px;
+  padding: .7em;
   position: relative;
-  box-shadow: 5px 5px 25px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 23px 0px rgba(0,0,0,0.75);
 }
 .innerForm {
   border: 2px solid black;
-  padding: 1em;
+  padding: 1em 1em 3em 1em;
 }
 .imgSam {
   border: 20px solid #e1c49a;
   transform: rotate(-1deg);
   box-shadow: 5px 5px 25px -4px rgba(0, 0, 0, 0.75);
 }
+#centerContent{
+  padding: 1em .5em;
+}
 .leftColumn {
   float: left;
-  max-width: 290px;
+  max-width: 310px;
   border-right: .2em solid black;
   margin-top: 1em;
-  padding-right: 1em;
+  padding-right: 2em;
 }
 .rightColumn {
   padding: 1.2em 0 .7em 1.5em;
-}
-.clearfix {
-  overflow: auto;
 }
 .input {
   border-bottom: 1px solid black;
   font-family: Courier;
   margin-left: .5em;
-
+  font-size: 16px;
+  text-transform: none;
 }
 .form-row {
   padding-bottom: 10px;
@@ -88,21 +77,16 @@ ul li {
 }
 .checkList {
   border: 1px solid black;
+  padding: .7em;
 }
-.signature {
-  font-size: 11px;
-}
+
 .verification {
-  width: 10em;
   font-family: 'Helvetica';
-  font-size: 12px;
-  float:right;
+  float: right;
 }
 .date {
   width: 15em;
   float: left;
-  font-size: 12px;
-  text-transform: uppercase;
 }
 .dateadd {
   font-size: 16px;
@@ -110,14 +94,38 @@ ul li {
 }
 .herbert {
   font-family: 'Crafty Girls';
+  font-size: 16px;
   color: #365c69;
   text-align: center;
 }
 .parentsig {
-  font-size: 11px;
   border-top: 1px solid black;
-  text-transform: uppercase;
+  font-size: 10px;
+}
+.signature {
+  text-transform: none;
 }
 footer {
   padding-top: 2.5em;
+}
+.checkList input {
+  padding: 3em;
+}
+
+input[type=radio],{
+  position:absolute;
+  left:0;
+  top:0;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  opacity:0.01;
+}
+input[type=radio]+label{
+  display:inline-block;
+  font-size: 14px;
+
+}
+input[type=radio]:checked+label{
+  //some style here to customize radio buttons, but how?!
 }
