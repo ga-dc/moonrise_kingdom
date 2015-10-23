@@ -26,6 +26,8 @@ h2 {
 }
 .question{
   font-size: 11px;
+  background: #eabc6f;
+  padding: 0px 10px 10px 0;
 }
 .form {
   margin: 0 auto;
@@ -59,14 +61,13 @@ h2 {
   padding: 1.2em 0 .7em 1.5em;
 }
 .input {
-  border-bottom: 1px solid black;
   font-family: Courier;
-  margin-left: .5em;
   font-size: 16px;
   text-transform: none;
 }
 .form-row {
-  padding-bottom: 10px;
+  border-bottom:1px solid #000;
+  margin-bottom:1em;
 }
 .formInput {
   margin-top: .3em
@@ -112,20 +113,33 @@ footer {
   padding: 3em;
 }
 
-input[type=radio],{
-  position:absolute;
-  left:0;
-  top:0;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-  opacity:0.01;
+input[type=radio]{
+  display:none;
 }
+
 input[type=radio]+label{
   display:inline-block;
   font-size: 14px;
-
+  position:relative;
+  padding:0 10px 0 30px;
 }
-input[type=radio]:checked+label{
-  //some style here to customize radio buttons, but how?!
+
+input[type=radio]+label:before,
+input[type=radio]+label:after{
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+input[type=radio]+label:before{
+  border:1px solid #000;
+  width:20px;
+  height:20px;
+}
+
+input[type=radio]:checked+label:after{
+  content:'x';
+  font-family:monospace;
 }
