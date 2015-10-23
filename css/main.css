@@ -4,8 +4,8 @@
  - Photo size: 282 x 282
 
  - Colors:
-   - #eabc6f (form background)
-   - #e1c49a (photo border)
+
+
    - #365c69 (blue ink)
 
  - Fonts:
@@ -14,6 +14,109 @@
    - Courier, monospaced;
 */
 
+* {
+  box-sizing: border-box;
+}
 body {
+  background-image: url('../images/wood.jpg');
+  font-family: 'Montserrat' 'Helvetica' 'sans-serif';;
+
+}
+.banner {
+  text-align: center;
+}
+h1{
+
   margin: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 14px;
+}
+.question{
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.form {
+  margin: 0 auto;
+  margin-top: 3em;
+  background: #eabc6f;
+  max-width: 695px;
+  padding: .5em;
+  position: relative;
+  box-shadow: 5px 5px 25px -14px rgba(0,0,0,0.75);
+}
+.innerForm {
+  border: 2px solid black;
+  padding: 1.3em;
+
+
+
+}
+.imgSam {
+  border: 20px solid #e1c49a;
+  transform: rotate(-1deg);
+  box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.75);
+}
+.leftColumn {
+  float: left;
+  max-width: 290px;
+  border-right: .2em solid black;
+  margin-top: 1em;
+  padding-right: 1em;
+
+}
+.rightColumn {
+  padding: 1em 0 .7em 1.2em;
+}
+.clearfix {
+  overflow: auto;
+}
+.input{
+  border-bottom: 1px solid black;
+  font-family: Courier;
+  margin-left: .5em;
+}
+.form-row{
+  padding-bottom: 10px;
+}
+.formInput{
+  margin-top: .3em
+}
+ul li{
+  display: inline;
+  list-style-type: none;
+}
+form:nth-child(4){
+  font-size: 20px;
+}
+.checkList{
+  border: 1px solid black;
+
+}
+.signature{
+  font-size: 11px;
+}
+.verification{
+  width: 10em;
+
+}
+.date{
+  width: 10em;
+  float:left;
+}
+.herbert {
+  font-family: 'Crafty Girls';
+  color:#365c69;
+  text-align: center;
+}
+.parentsig{
+  font-size: 11px;
+  border-top:1px solid black;
+  text-transform: uppercase;
+}
+footer{
+  padding-top: 1.3em;
 }
