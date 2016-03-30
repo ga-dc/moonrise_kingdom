@@ -1,19 +1,145 @@
-/*
- - Layout width: 710px
-
- - Photo size: 282 x 282
-
- - Colors:
-   - #eabc6f (form background)
-   - #e1c49a (photo border)
-   - #365c69 (blue ink)
-
- - Fonts:
-   - 'Montserrat', Helvetica, sans-serif; (Google fonts)
-   - 'Crafty Girls', script; (Google fonts)
-   - Courier, monospaced;
-*/
-
+* {
+  box-sizing: border-box;
+}
+.clearfix {
+  overflow: auto;
+}
 body {
+  background-image: url('../images/wood.jpg');
+  font-family: 'Montserrat' 'Helvetica' 'sans-serif';
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.banner {
+  text-align: center;
+  padding-bottom: 1em;
+}
+h1 {
   margin: 0;
+  font-size: 26px;
+  font-stretch: extra-expanded;
+}
+h2 {
+  font-size: 14px;
+  margin: .5em 0 0 0;
+
+}
+.question{
+  font-size: 11px;
+  background: #eabc6f;
+  padding: 0px 10px 10px 0;
+}
+.form {
+  margin: 0 auto;
+  margin-top: 4em;
+  background: #eabc6f;
+  max-width: 710px;
+  padding: .7em;
+  position: relative;
+  box-shadow: -1px 3px 23px 0px rgba(0,0,0,0.75);
+}
+.innerForm {
+  border: 2px solid black;
+  padding: 1em 1em 3em 1em;
+}
+.imgSam {
+  border: 20px solid #e1c49a;
+  transform: rotate(-1deg);
+  box-shadow: 5px 5px 25px -4px rgba(0, 0, 0, 0.75);
+}
+#centerContent{
+  padding: 1em .5em;
+}
+.leftColumn {
+  float: left;
+  max-width: 310px;
+  border-right: .2em solid black;
+  margin-top: 1em;
+  padding-right: 2em;
+}
+.rightColumn {
+  padding: 1.2em 0 .7em 1.5em;
+}
+.input {
+  font-family: Courier;
+  font-size: 16px;
+  text-transform: none;
+}
+.form-row {
+  border-bottom:1px solid #000;
+  margin-bottom:1em;
+}
+.formInput {
+  margin-top: .3em
+}
+ul li {
+  display: inline;
+  list-style-type: none;
+}
+.checkList {
+  border: 1px solid black;
+  padding: .7em;
+}
+
+.verification {
+  font-family: 'Helvetica';
+  float: right;
+}
+.date {
+  width: 15em;
+  float: left;
+}
+.dateadd {
+  font-size: 16px;
+  font-family: Courier;
+}
+.herbert {
+  font-family: 'Crafty Girls';
+  font-size: 16px;
+  color: #365c69;
+  text-align: center;
+}
+.parentsig {
+  border-top: 1px solid black;
+  font-size: 10px;
+}
+.signature {
+  text-transform: none;
+}
+footer {
+  padding-top: 2.5em;
+}
+.checkList input {
+  padding: 3em;
+}
+
+input[type=radio]{
+  display:none;
+}
+
+input[type=radio]+label{
+  display:inline-block;
+  font-size: 14px;
+  position:relative;
+  padding:0 10px 0 30px;
+}
+
+input[type=radio]+label:before,
+input[type=radio]+label:after{
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+input[type=radio]+label:before{
+  border:1px solid #000;
+  width:20px;
+  height:20px;
+}
+
+input[type=radio]:checked+label:after{
+  content:'x';
+  font-family:monospace;
 }
